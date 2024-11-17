@@ -409,13 +409,25 @@
 	"variable": [
 		{
 			"key": "ip",
-			"value": "192.168.1.3",
+			"value": "192.168.1.4",
 			"type": "string"
 		},
 		{
 			"key": "baseURL",
 			"value": "http://{{ip}}/opencart/Upload/index.php?route=",
 			"type": "string"
+		},
+		{
+			"key": "api_token_val",
+			"value": ""
+		},
+		{
+			"key": "product_id",
+			"value": ""
+		},
+		{
+			"key": "quantity",
+			"value": ""
 		}
 	]
 }
