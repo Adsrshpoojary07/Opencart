@@ -25,7 +25,8 @@
 							"//Creating collection variables to store API's\r",
 							"pm.collectionVariables.set(\"api_token_val\", jsonData.api_token);\r",
 							"\r",
-							"//api_token will change after every time i run  this request"
+							"//api_token will change after every time i run  this request\r",
+							"//note you need to change ip adress both in postman and opencart backend application"
 						],
 						"type": "text/javascript",
 						"packages": {}
@@ -157,6 +158,7 @@
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
+							"\r",
 							"\r",
 							"var jsonData=pm.response.json();\r",
 							"pm.environment.set(\"cart_id_key\",jsonData.products[0].cart_id);\r",
@@ -409,7 +411,7 @@
 	"variable": [
 		{
 			"key": "ip",
-			"value": "192.168.1.4",
+			"value": "192.168.1.5",
 			"type": "string"
 		},
 		{
