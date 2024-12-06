@@ -162,7 +162,9 @@
 							"\r",
 							"var jsonData=pm.response.json();\r",
 							"pm.environment.set(\"cart_id_key\",jsonData.products[0].cart_id);\r",
-							""
+							"\r",
+							"\r",
+							"//You can add product id in \"Body section form-data\" or else add variable in query path(HTML LINK)"
 						],
 						"type": "text/javascript",
 						"packages": {}
@@ -411,7 +413,7 @@
 	"variable": [
 		{
 			"key": "ip",
-			"value": "192.168.1.5",
+			"value": "192.168.1.3",
 			"type": "string"
 		},
 		{
@@ -420,15 +422,15 @@
 			"type": "string"
 		},
 		{
-			"key": "api_token_val",
-			"value": ""
-		},
-		{
 			"key": "product_id",
 			"value": ""
 		},
 		{
 			"key": "quantity",
+			"value": ""
+		},
+		{
+			"key": "api_token_val",
 			"value": ""
 		}
 	]
