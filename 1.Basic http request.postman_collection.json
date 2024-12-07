@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "d9b932a8-9072-4218-b916-9af245a85876",
+		"name": "1.Basic http request",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10034070"
+	},
+	"item": [
+		{
+			"name": "Get the info of students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get info of single student",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/students?id=303",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "303"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update student info",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Created\",\r\n    \"active\": true,\r\n    \"grades\": [\r\n        3.3,\r\n        4,\r\n        3.8\r\n    ],\r\n    \"yearsOld\": 17,\r\n    \"color\": \"pink\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update student info",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"303\",\r\n    \"name\": \"Adarsh\",\r\n    \"active\": true,\r\n    \"grades\": [\r\n        3.3,\r\n        6,\r\n        3.8\r\n    ],\r\n    \"yearsOld\": 17,\r\n    \"color\": \"pink\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/students/303",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"303"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update student info of one field",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"303\",\r\n    \"name\": \"Adarsh poojary\",\r\n    \"active\": true,\r\n    \"grades\": [\r\n        3.3,\r\n        4,\r\n        3.8\r\n    ],\r\n    \"yearsOld\": 17,\r\n    \"color\": \"pink\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/students/303",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"303"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete one student id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/students/aed9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"aed9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
